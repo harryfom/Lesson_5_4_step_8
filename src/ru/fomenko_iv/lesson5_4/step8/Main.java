@@ -57,7 +57,8 @@ public class Main {
             throw new IllegalArgumentException(e);
         } catch (IOException e) {
             throw new IllegalArgumentException(e);
-
+        } catch (ClassCastException e){
+            throw new IllegalArgumentException(e);
         }
         return animals;
     }
